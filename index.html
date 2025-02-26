@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoCustomer - Reward Your Loved Ones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2 class="brand">🎤 EchoCustomer</h2>
+        <p class="text-muted">Reward your loved ones with free airtime when you shop with us! 💛</p>
+        
+        <form>
+            <div class="mb-3">
+                <label for="customerName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Your Phone Number 📞</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+                <label for="recipientName" class="form-label">Loved One’s Name 💙</label>
+                <input type="text" class="form-control" id="recipientName" placeholder="Who are you rewarding?" required>
+            </div>
+            <div class="mb-3">
+                <label for="relationship" class="form-label">Your Relationship 🤝</label>
+                <select class="form-select" id="relationship" required>
+                    <option value="">Select Relationship</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="parent">Parent</option>
+                    <option value="friend">Friend</option>
+                    <option value="partner">Partner</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Send Reward 🚀</button>
+        </form>
+    </div>
+</body>
+</html>

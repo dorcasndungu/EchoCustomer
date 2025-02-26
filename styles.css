@@ -1,0 +1,23 @@
+
+body {
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.brand {
+    color: #004d40;
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: #ffc107;
+    border: none;
+    color: #333;
+}
+.btn-custom:hover {
+    background-color: #e0a800;
+}
