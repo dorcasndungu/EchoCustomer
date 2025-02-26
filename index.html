@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container mt-5 text-center">
+    <div class="container mt-5">
         <h2 class="brand">🎤 EchoCustomer</h2>
-        <p class="text-muted">Reward your loved ones with free airtime when you shop with us! 💛</p>
+        <p class="text-muted text-center">Reward your loved ones with free airtime when you shop with us! 💛</p>
         
         <form>
             <div class="mb-3">
                 <label for="customerName" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+                <input type="text" class="form-control" id="customerName" placeholder="John">
             </div>
             <div class="mb-3">
                 <label for="phoneNumber" class="form-label">Your Phone Number 📞</label>
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="0712356789">
+            </div>
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Your Loved One's Phone Number 📞</label>
+                <input type="tel" class="form-control" id="recipientPhoneNumber" placeholder="0712356789">
             </div>
             <div class="mb-3">
                 <label for="recipientName" class="form-label">Loved One’s Name 💙</label>
-                <input type="text" class="form-control" id="recipientName" placeholder="Who are you rewarding?" required>
+                <input type="text" class="form-control" id="recipientName" placeholder="Sister">
             </div>
             <div class="mb-3">
                 <label for="relationship" class="form-label">Your Relationship 🤝</label>
-                <select class="form-select" id="relationship" required>
-                    <option value="">Select Relationship</option>
-                    <option value="sibling">Sibling</option>
-                    <option value="parent">Parent</option>
-                    <option value="friend">Friend</option>
-                    <option value="partner">Partner</option>
-                    <option value="other">Other</option>
-                </select>
+                <input type="text" class="form-control" id="relationship" placeholder="Mary">
             </div>
-            <button type="submit" class="btn btn-custom w-100">Send Reward 🚀</button>
+            <button onclick="saveData(event)" class="btn btn-custom w-100">Send Reward 🚀</button>
         </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+    <script src="customer.js"></script> 
+
 </body>
 </html>
